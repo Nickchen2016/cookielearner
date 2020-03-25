@@ -1,5 +1,6 @@
-dragElement(document.getElementById("popup-window"));
 
+
+dragElement(document.getElementById("popup-window"));
 function dragElement(elmnt){
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     if (document.getElementById(elmnt.id)) {
@@ -35,7 +36,18 @@ function dragElement(elmnt){
     
       function closeDragElement() {
         // stop moving when mouse button is released:
-        document.onmouseup = null;
+        document.onmouseup = null;;
         document.onmousemove = null;
       }
 }
+
+
+document.cookie = "name=oeschger";
+document.cookie = "favorite_food=tripe";
+document.getElementById("clickInfo").onClick = function() {
+  console.log('____',document.cookie);
+}
+// const time = new Date().getTime();
+// const expireTime = time + 1000*60;
+// // document.cookie = "cookieName=cokkielearner; expires=" + expireTime + 86400 + "; path=/";
+// console.log(time, expireTime)
