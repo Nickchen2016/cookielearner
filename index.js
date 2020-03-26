@@ -1,4 +1,4 @@
-
+import './style.css';
 
 dragElement(document.getElementById("popup-window"));
 function dragElement(elmnt){
@@ -44,10 +44,11 @@ function dragElement(elmnt){
 
 document.cookie = "name=oeschger";
 document.cookie = "favorite_food=tripe";
-document.getElementById("clickInfo").onClick = function() {
-  console.log('____',document.cookie);
-}
-// const time = new Date().getTime();
-// const expireTime = time + 1000*60;
-// // document.cookie = "cookieName=cokkielearner; expires=" + expireTime + 86400 + "; path=/";
-// console.log(time, expireTime)
+
+document.getElementById("clickInfo").onclick = function() {
+    console.log('____',document.cookie);
+  }
+
+// document.getElementById("clickInfo").onClick = function() {
+//   console.log('____',document.cookie);
+// }

@@ -4,6 +4,11 @@ body {
     height: 100%;
 }
 
+#cookie {
+    width: 269px; height: 250px;
+    background-image: url("./assert/cookie.png");
+}
+
 #popup-window {
     display: flex;
     align-items: center;
